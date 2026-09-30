@@ -1,0 +1,938 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Manish Kumar is a frontend developer and SEO specialist building responsive, accessible websites with modern technologies, strong performance, and practical SEO."
+    >
+
+    <meta
+        name="keywords"
+        content="Manish Kumar, Frontend Developer, Web Developer, HTML, CSS, JavaScript, React, SEO, Portfolio"
+    >
+
+    <meta name="author" content="Manish Kumar">
+
+    <meta name="theme-color" content="#030a16">
+
+    <title>
+        Manish Kumar | Frontend Developer & SEO Specialist
+    </title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:opsz,wght@8..72,400;8..72,500;8..72,600;8..72,700&display=swap"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+    >
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:opsz,wght@8..72,400;8..72,500;8..72,600;8..72,700&display=swap"
+            rel="stylesheet"
+        >
+    </noscript>
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link
+        rel="preload"
+        as="style"
+        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css"
+        onload="this.onload=null;this.rel='stylesheet'"
+    >
+
+    <link
+        rel="preload"
+        as="style"
+        href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+        onload="this.onload=null;this.rel='stylesheet'"
+    >
+    <noscript>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css"
+        >
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+        >
+    </noscript>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link
+        rel="preload"
+        href="styles/services.css"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+    >
+    <link
+        rel="preload"
+        href="styles/about.css"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+    >
+    <link
+        rel="preload"
+        href="styles/projects.css"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+    >
+    <link
+        rel="preload"
+        href="styles/contacts.css"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+    >
+    <noscript>
+        <link rel="stylesheet" href="styles/services.css">
+        <link rel="stylesheet" href="styles/about.css">
+        <link rel="stylesheet" href="styles/projects.css">
+        <link rel="stylesheet" href="styles/contacts.css">
+    </noscript>
+</head>
+
+<body>
+
+    <header class="header" id="header">
+
+        <div class="header-container">
+
+            <a
+                href="#home"
+                class="logo"
+                aria-label="Manish Kumar Portfolio Home"
+                title="Go to the home section"
+            >
+                <img
+                    src="assets/logo.webp"
+                    alt="Manish Kumar Portfolio Logo"
+                    title="Manish Kumar Portfolio logo"
+                >
+                <span>Portfolio</span>
+            </a>
+
+            <button
+                type="button"
+                id="menu-toggle"
+                class="menu-icon"
+                aria-label="Open navigation menu"
+                aria-controls="main-navigation"
+                aria-expanded="false"
+            >
+                <i class="ph ph-list" aria-hidden="true"></i>
+            </button>
+
+            <nav
+                id="main-navigation"
+                class="navbar"
+                aria-label="Main navigation"
+            >
+                <ul class="nav-links">
+
+                    <li>
+                        <a
+                            href="#home"
+                            class="nav-link active"
+                            data-tab="home"
+                            title="Go to the home section"
+                        >
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#services"
+                            class="nav-link"
+                            data-tab="services"
+                            title="Explore my services"
+                        >
+                            Services
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#about"
+                            class="nav-link"
+                            data-tab="about"
+                            title="Learn more about me"
+                        >
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#projects"
+                            class="nav-link"
+                            data-tab="projects"
+                            title="View my projects"
+                        >
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#contact"
+                            class="nav-link"
+                            data-tab="contact"
+                            title="Get in touch"
+                        >
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section
+            id="home"
+            class="content home-section active"
+            aria-labelledby="home-title"
+        >
+
+            <div class="main-container home-container">
+
+                <div class="home-content">
+
+                    <p class="eyebrow">
+                        Hello, I'm a 
+                    </p>
+
+                    <h1 id="home-title">
+                        Manish Kumar
+                    </h1>
+
+                    <h2>
+                        I'm a
+                        <span id="typing-span">
+                            Frontend Developer &amp; SEO Professional
+                        </span>
+
+                    </h2>
+
+                    <p class="hero-description hero-description-desktop"> I build modern, responsive, and SEO-friendly websites that look professional, perform smoothly, and work seamlessly across desktop, tablet, and mobile. I combine frontend development with practical SEO to create fast, user-focused, and search-friendly web experiences.
+                    </p>
+
+                    <p class="hero-description hero-description-mobile">
+                        I’m Manish Kumar, a Frontend Developer and SEO professional. I create responsive, accessible websites with HTML, CSS, JavaScript, and React, and help them get discovered through practical SEO.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a
+                            href="MANISHCV.pdf"
+                            class="btn primary-btn"
+                            download
+                            title="Download Manish Kumar's CV"
+                        >
+                            <span>Download CV</span>
+                            <i class="ph ph-download-simple"></i>
+                        </a>
+
+                        <a
+                            href="tel:+917717260650"
+                            class="btn secondary-btn"
+                            title="Call Manish Kumar"
+                        >
+                            Let's Talk
+                            <i class="ph ph-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+
+                    <div
+                        class="social-links"
+                        aria-label="Social media links"
+                    >
+
+                        <a
+                            href="https://www.instagram.com/rising_star_seo/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram"
+                            title="Visit Manish Kumar on Instagram"
+                        >
+                            <i class="ph ph-instagram-logo"></i>
+                        </a>
+
+                        <a
+                            href="https://www.facebook.com/profile.php?id=100026393856474"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Facebook"
+                            title="Visit Manish Kumar on Facebook"
+                        >
+                            <i class="ph ph-facebook-logo"></i>
+                        </a>
+
+                        <a
+                            href="https://github.com/kumar-manish-286"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub"
+                            title="View Manish Kumar's GitHub profile"
+                        >
+                            <i class="ph ph-github-logo"></i>
+                        </a>
+
+                        <a
+                            href="https://youtube.com/@rising_star_seo?si=27RJv0V5smvJ807u"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="YouTube"
+                            title="Visit Manish Kumar's YouTube channel"
+                        >
+                            <i class="ph ph-youtube-logo"></i>
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/manish286?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                            title="Connect with Manish Kumar on LinkedIn"
+                        >
+                            <i class="ph ph-linkedin-logo"></i>
+                        </a>
+
+                        <a
+                            class="whatsapp-social-link"
+                            href="https://wa.me/917717260650"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Chat with me on WhatsApp"
+                            title="Chat with Manish Kumar on WhatsApp"
+                        >
+                            <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="home-image">
+
+                    <span class="hero-image-glow" aria-hidden="true"></span>
+
+                    <div class="hero-image-orbit" aria-hidden="true">
+                        <span></span>
+                    </div>
+
+                    <div class="profile-image-wrapper">
+
+                        <img
+                            src="assets/profiles.webp"
+                            alt="Manish Kumar - Frontend Developer"
+                            title="Manish Kumar, Frontend Developer"
+                            class="profile-image"
+                            fetchpriority="high"
+                            loading="eager"
+                        >
+
+                    </div>
+
+                    <div class="hero-availability">
+                        <span class="availability-dot" aria-hidden="true"></span>
+                        Open to opportunities
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section
+            id="services"
+            class="content services-section"
+            aria-labelledby="services-title"
+        >
+
+            <div class="main-container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        What I Do
+                    </p>
+
+                    <h2 id="services-title">
+                        My Services
+                    </h2>
+
+                    <p>
+                       I create modern, high-performing digital experiences focused on responsive design, usability, performance, and search visibility—combining frontend development with strategic SEO to build websites that look great, perform efficiently, and reach the right audience.
+
+                    </p>
+
+                </div>
+
+                <div
+                    class="service-list"
+                    aria-live="polite"
+                >
+
+                    <article class="service-box">
+                        <span class="service-number">01</span>
+                        <span class="service-icon" aria-hidden="true">
+                            <i class="ph ph-layout"></i>
+                        </span>
+                        <h3>Responsive Web Design</h3>
+                        <p>
+                            I design and develop modern, responsive, and user-friendly interfaces that provide seamless experiences across mobile, tablet, and desktop devices. My approach combines clean design, intuitive navigation, accessibility, and performance to create engaging digital experiences that work smoothly across all screen sizes.
+
+                        </p>
+                        <a href="tel:+917717260650" title="Call Manish Kumar about responsive web design">
+                            Call me
+                            <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <article class="service-box">
+                        <span class="service-number">02</span>
+                        <span class="service-icon" aria-hidden="true">
+                            <i class="ph ph-code"></i>
+                        </span>
+                        <h3>Frontend Development</h3>
+                        <p>I build fast, responsive, and accessible websites using HTML, CSS, JavaScript, and modern frontend development practices. I focus on clean, maintainable code, optimized performance, intuitive user experiences, and SEO-friendly implementation across devices.
+
+                        </p>
+                        <a href="tel:+917717260650" title="Call Manish Kumar about frontend development">
+                            Call me
+                            <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <article class="service-box">
+                        <span class="service-number">03</span>
+                        <span class="service-icon" aria-hidden="true">
+                            <i class="ph ph-chart-line-up"></i>
+                        </span>
+                        <h3>SEO Optimization</h3>
+                        <p>I implement practical, data-driven SEO strategies that improve search visibility, website performance, and user experience. My approach covers On-Page SEO, Technical SEO, Off-Page SEO, keyword optimization, internal linking, and content improvements to help websites attract relevant organic traffic and reach the right audience.
+
+                        </p>
+                        <a href="tel:+917717260650" title="Discuss SEO optimization with Manish Kumar">
+                            Discuss your project
+                            <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section
+            id="about"
+            class="content about-section"
+            aria-labelledby="about-title"
+        >
+
+            <div class="main-container about-container">
+
+                <aside class="about-sidebar">
+
+                    <p class="section-label">
+                        Discover More
+                    </p>
+
+                    <h2 id="about-title">
+                        Why Hire Me?
+                    </h2>
+
+                    <p>
+                        I build responsive, performance-driven web experiences that combine clean code, modern frontend technologies, intuitive user experiences, and SEO best practices. My goal is to create websites that not only look modern but also perform efficiently, provide a seamless user experience, and achieve better visibility in search engines.
+
+                    </p>
+
+                    <ul class="about-highlights">
+                        <li>
+                            <i class="ph ph-check-circle" aria-hidden="true"></i>
+                            Responsive, user-focused interfaces
+                        </li>
+                        <li>
+                            <i class="ph ph-check-circle" aria-hidden="true"></i>
+                            Clean, maintainable frontend code
+                        </li>
+                        <li>
+                            <i class="ph ph-check-circle" aria-hidden="true"></i>
+                            SEO-minded performance
+                        </li>
+                    </ul>
+
+                    <a class="about-cta" href="#contact" title="Go to the contact section">
+                        Let’s work together
+                        <i class="ph ph-arrow-up-right" aria-hidden="true"></i>
+                    </a>
+
+                </aside>
+
+
+                <div class="about-content">
+
+                    <div
+                        class="about-tabs"
+                        role="tablist"
+                        aria-label="About information"
+                    >
+                        <button
+                            type="button"
+                            id="experience-tab"
+                            class="about-tab active"
+                            data-tab="experience"
+                            role="tab"
+                            aria-controls="experience"
+                            aria-selected="true"
+                        >
+                            <i class="ph ph-briefcase" aria-hidden="true"></i>
+                            Experience
+                        </button>
+
+                        <button
+                            type="button"
+                            id="education-tab"
+                            class="about-tab"
+                            data-tab="education"
+                            role="tab"
+                            aria-controls="education"
+                            aria-selected="false"
+                        >
+                            <i class="ph ph-graduation-cap" aria-hidden="true"></i>
+                            Education
+                        </button>
+
+                        <button
+                            type="button"
+                            id="skills-tab"
+                            class="about-tab"
+                            data-tab="skills"
+                            role="tab"
+                            aria-controls="skills"
+                            aria-selected="false"
+                        >
+                            <i class="ph ph-code" aria-hidden="true"></i>
+                            Skills
+                        </button>
+
+                        <button
+                            type="button"
+                            id="about-me-tab"
+                            class="about-tab"
+                            data-tab="about-me"
+                            role="tab"
+                            aria-controls="about-me"
+                            aria-selected="false"
+                        >
+                            <i class="ph ph-user" aria-hidden="true"></i>
+                            About Me
+                        </button>
+                    </div>
+
+                    <div
+                        aria-labelledby="experience-tab"
+                        class="tab-content active"
+                        id="experience"
+                        role="tabpanel"
+                        tabindex="0"
+                    >
+
+                        <div class="content-heading">
+
+                            <p class="section-label">
+                                Career
+                            </p>
+
+                            <h3>
+                                Experience
+                            </h3>
+
+                        </div>
+
+                        <div class="experience-list">
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        aria-labelledby="education-tab"
+                        class="tab-content"
+                        id="education"
+                        role="tabpanel"
+                        tabindex="0"
+                        hidden
+                    >
+
+                        <div class="content-heading">
+
+                            <p class="section-label">
+                                Academic Background
+                            </p>
+
+                            <h3>
+                                Education
+                            </h3>
+
+                        </div>
+
+                        <div class="education-list">
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        aria-labelledby="skills-tab"
+                        class="tab-content"
+                        id="skills"
+                        role="tabpanel"
+                        tabindex="0"
+                        hidden
+                    >
+
+                        <div class="content-heading">
+
+                            <p class="section-label">
+                                Technical Stack
+                            </p>
+
+                            <h3>
+                                Skills
+                            </h3>
+
+                        </div>
+
+                        <div class="skill-list">
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        aria-labelledby="about-me-tab"
+                        class="tab-content"
+                        id="about-me"
+                        role="tabpanel"
+                        tabindex="0"
+                        hidden
+                    >
+
+                        <div class="content-heading">
+
+                            <p class="section-label">
+                                Personal Information
+                            </p>
+
+                            <h3>
+                                About Me
+                            </h3>
+
+                        </div>
+
+                        <p class="about-me-intro">
+                            I combine frontend development with practical SEO to create responsive, user-friendly websites that are easy to find and perform well across devices.
+                        </p>
+
+                        <div class="info-box">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section
+            id="projects"
+            class="content projects-section"
+            aria-labelledby="projects-title"
+        >
+
+            <div class="main-container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        My Work
+                    </p>
+
+                    <h2 id="projects-title">
+                        Featured Projects
+                    </h2>
+
+                    <p>
+                       Explore a selection of my web development and SEO projects, showcasing practical implementations, responsive design, modern frontend technologies, performance optimization, and strategies focused on creating effective digital experiences.
+
+                    </p>
+
+                </div>
+
+
+                <div class="project-wrapper">
+
+                    <div
+                        class="carousel"
+                        aria-live="polite"
+                    >
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section
+            id="contact"
+            class="content contact-section"
+            aria-labelledby="contact-title"
+        >
+
+            <div class="main-container contact-container">
+
+                <div class="contact-info">
+
+                    <p class="section-label">
+                        Get In Touch
+                    </p>
+
+                    <h2 id="contact-title">
+                        Let's Work Together
+                    </h2>
+
+                    <p>
+                        Have a project, website idea, or collaboration in mind? I’d love to hear about it. Whether you need a modern website, frontend development, or SEO optimization, feel free to get in touch and let’s create something impactful together.
+
+                    </p>
+
+                    <div class="contact-media">
+                    </div>
+
+                </div>
+
+
+                <div class="contact-form-wrapper">
+
+                    <form
+                        id="contact-form"
+                        class="contact-form"
+                        action="https://formspree.io/f/mgobygqr"
+                        method="POST"
+                    >
+
+                        <div class="form-heading">
+
+                            <p class="section-label">
+                                Contact Me
+                            </p>
+
+                            <h3>
+                                Send a Message
+                            </h3>
+
+                        </div>
+
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="name">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Enter your name"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Phone Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Enter your phone number"
+                                    autocomplete="tel"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="subject">
+                                    Subject
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="subject"
+                                    name="subject"
+                                    placeholder="What is this about?"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                placeholder="Tell me about your project..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn submit-btn"
+                        >
+                            <span>Send Message</span>
+                            <i class="ph ph-paper-plane-tilt"></i>
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="main-container footer-container">
+
+            <p>
+                © <span id="current-year"></span>
+                Manish Kumar. All rights reserved.
+            </p>
+
+            <a
+                href="#home"
+                class="back-to-top"
+                aria-label="Back to top"
+                title="Back to the top of the page"
+            >
+                <i class="ph ph-arrow-up"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
+    <a
+        class="whatsapp-float"
+        href="https://wa.me/917717260650"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with me on WhatsApp"
+        title="Chat with Manish Kumar on WhatsApp"
+    >
+        <i class="ph ph-whatsapp-logo" aria-hidden="true"></i>
+        <span>Chat on WhatsApp</span>
+    </a>
+
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+
+    <script src="scripts/script.js"></script>
+
+    <script src="scripts/about.js"></script>
+
+    <script src="scripts/project.js"></script>
+
+    <script src="scripts/contact.js"></script>
+
+
+    <script>
+        document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
